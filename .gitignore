@@ -1,3 +1,26 @@
+# 排除上存到GIT的文件件與文件
+Other_ExcludeToGit/
+.vs/
+out/
+output/video/
+output/picture/
+output/hls/
+# Windows
+[Dd]esktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+# Node.js
+node_modules/
+
+# C++ ------------------------------------------------
 # Prerequisites
 *.d
 

@@ -1,0 +1,43 @@
+{
+    "meta": {
+        "success": true,
+        "message": "GET CAMERA TASK SUCCESS,BY CAMERA ID =8 TIPS:獲取當前查詢鏡頭的任務，規則：每個任務類型只列最近更新的一條。",
+        "errorCode": 4007
+    },
+    "data": [
+        {
+            "id": 8,
+            "maincomId": "6000014",
+            "name": "區域警報任務",
+            "type": 6,
+            "cameraList1": "3,2,12,8",
+            "cameraList2": "3,2",
+            "libList": "1000,1001,1002,1003",
+            "interval": 2,
+            "threshold": 0.8,
+            "state": 0,
+            "plan": "每天高峰人流時段",
+            "remark": "特殊任務1: 跟蹤持有刀具進入商場的人員",
+            "visible": 1,
+            "createTime": "2023-01-19T10:19:25",
+            "updateTime": "2023-06-22T21:16:35"
+        },
+        {
+            "id": 10,
+            "maincomId": "6000014",
+            "name": "任務5",
+            "type": 8,
+            "cameraList1": "3,2,8,9",
+            "cameraList2": "3,2,8,9",
+            "libList": "1000,1001",
+            "interval": 2,
+            "threshold": 0.8,
+            "state": 1,
+            "plan": "計劃任務 1",
+            "remark": "計劃任務 1",
+            "visible": 0,
+            "createTime": "2023-01-19T10:19:25",
+            "updateTime": "2023-03-01T14:23:33"
+        }
+    ]
+}

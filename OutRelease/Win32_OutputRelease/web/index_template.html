@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEST API TOKEN & CAMERA HLS URL</title>
+
+
+    <!-- Bootstrap v4.1.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/dplayer/1.26.0/DPlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script>
+    <script src="../web/md5.js"></script>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed"> 
+    <div class="wrapper container  mt-3" style="max-width:700px;">
+
+        <span class="alert alert-success"><b>TESTING PLYER FOR CAMERA HLS LIVE</b></span>
+
+        <div class="row p-3 mb-1">
+            <label class="label label-primary p-1">HLS URL </label> <input id="hlsUrlx" value="$camera_hls$" />
+			<div class="alert alert-warning">
+				<span class="text-white bg-success p-1" title="CameraId = 8"> CameraId=8 </span><br>
+				<span class="text-danger" style="font-size:12px;font-weight:600;" > HLS URL FORMAT (CameraId=8)</span><br>
+				<span class="text-danger" style="font-size:12px;font-weight:600;" > HLS URL BY NAT STUN: </span><br>
+				<span class="text-white bg-dark pt-1 pb-1 pl-3 pr-3" style="font-size:12px;" >$camera_hls_by_stun$ </span>
+			</div>
+        </div>
+
+        <div class="row p-3 mb-1">
+            <label>INPUT ACCOUNT </label> <input id="mediaUserName" value="$admin$" />
+        </div>
+        <div class="row p-3 mb-3">
+            <label>INPUT PASSWORD </label> <input id="mediaPassword" value="$password$" /><br />
+            <span class="text-dark" title="32bit lower case">$admin$:$password$ LOWER MD5 = $local_authorization$</span><br />
+			<span class="text-warning" >LOWER MD5 ONLINE : https://www.md5hashgenerator.com/</span>
+        </div>
+        <div class="row p-3">
+			<div class="alert alert-primary left" role="alert">
+                <strong>HLS LIVE</strong>
+			</div>
+			
+            <div id="dplayer1"></div>
+        </div>
+
+        <div class="row p-3">
+            <button id="submitPlay1" class="btn btn-success"> PLAY </button><br />
+        </div>
+    </div>
+ 
+
+	
+
+    <div class="wrapper container  mt-3 mb-5" style="max-width:700px;">
+
+        <span class="label label-primary p-1 rounded">Ref:</span>
+        <div>
+            <h4>What is PNA?</h4><br>
+            <p class="h6">
+                它的全名為 Private Network Access 會被簡稱為 PNA ，翻譯為 私有網路存取 。 什麼是私有網路存取呢，是指一些個人組織或是政府組織中，例如公司的內網，不希望在外部被存取到，就會加一個防火牆來限制。 這個網站就只能在公司的區域網路或使用 VPN 進行訪問，而這個就是私域網路。
+                <br><br>
+                Its full name is Private Network Access, which is abbreviated as PNA. What is private network access? It refers to some personal organizations or government organizations, such as the company's intranet, which do not want to be accessed externally, so a firewall is added to restrict it. This site can only be accessed in the company's LAN or using VPN, which is a private network.
+            </p>
+            <br>
+
+            <a href="https://developer.chrome.com/blog/private-network-access-update/" style="text-decoration:none;" target="_blank">
+                <span>https://developer.chrome.com/blog/private-network-access-update/</span>
+            </a>
+
+            <br>
+            <a href="https://www.videolan.org/vlc/download-windows.html" style="text-decoration:none;" target="_blank">
+                <span>VLC player download : https://www.videolan.org/vlc/download-windows.html </span>
+            </a>
+
+            <!-- reference
+        https://dplayer.js.org/zh/guide.html#hls
+        https://www.cnblogs.com/fallTakeMan/p/12099242.html
+        https://www.w3schools.com/tags/av_prop_buffered.asp
+        https://www.0uu.cc/archives/10/
+        https://dplayer.js.org/zh/guide.html#%E5%8F%82%E6%95%B0
+
+        https://ithelp.ithome.com.tw/articles/10206181
+
+        https://blog.csdn.net/weixin_42402812/article/details/115905387
+        -->
+
+        </div>
+
+        <div>
+            <br />
+            <a id="btnRetrun" href="/hello" target="_blank" class="btn btn-sm btn-success p-1">Return</a>
+        </div>
+    </div>
+    <script>
+         
+        //PLAY TEST
+        $("#submitPlay1").click(function () {
+
+            var hlsUrl = $("#hlsUrlx").val();
+
+            console.log(hlsUrl);
+			console.log(hlsUrl);
+			
+            const dp1 = new DPlayer({
+                container: document.getElementById('dplayer1'),
+                screenshot: true,
+                autoplay: true,
+                video: {
+                    url: hlsUrl,
+                    type: 'auto'
+                }
+            });
+        });
+
+    </script>
+
+
+    <script>
+        if (Hls.isSupported()) {
+
+            var hlsUrl = $("#hlsUrlx").val();
+			
+			console.log("#hlsUrlx");
+            console.log(hlsUrl);
+            // 获取 video 标签
+            var video = document.getElementById('video1');
+            // 实例化 Hls 对象
+            var hls = new Hls();
+            // 传入路径
+            hls.loadSource(hlsUrl);
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                video.muted = false;
+                video.play(); // 调用播放 API
+            }); 
+
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = videoSrc;
+            video.addEventListener('canplay', function () {
+                video.play();
+            });
+        }
+ 
+    </script> 
+</body>
+</html>

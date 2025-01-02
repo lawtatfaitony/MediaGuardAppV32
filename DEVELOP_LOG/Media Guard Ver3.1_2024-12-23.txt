@@ -1,0 +1,538 @@
+
+
+Current working directory:X:\MediaGuardAppV31\MediaGuardApp_Dev\Output
+
+
+mount ./video success! ./video
+
+mount ./hls success! ./hls
+
+mount ./picture success! ./picture
+
+mount ./web success!./web
+
+
+DEVICE_CONFIG::DEVICE SERIAL NUMBER : IbOEHlOZQz |  Storage Limited bytes : 502400001
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :323}
+
+
+Camera Rtsp = rtsp://admin:hik12345@192.168.0.92:554/h264/ch1/main/av_stream ----------------------
+
+func::CAR_PLATE_RECOGNITION_ENABLE=1
+
+CameraId=8 Open input[rtsp://admin:hik12345@192.168.0.92:554/h264/ch1/main/av_stream] success.
+
+-------------------------- Device Infomation --------------------------
+
+-------------------------- CameraId=8 --------------------------
+
+Decoder h264 does support device type cuda.
+HardWare Initialize : hw_decoder_init success video
+Couldn't find audio stream in input
+
+CameraId=8 Can't find audio stream in the rtsp input
+
+
+Camera Rtsp = rtsp://admin:admin888888@192.168.0.91:554/cam/realmonitor?channel=1&subtype=0 ----------------------
+
+
+Initializing cameraId=8 start time=2024-12-23 02:51:41
+
+func::CAR_PLATE_RECOGNITION_ENABLE=1
+
+CameraId=12 Open input[rtsp://admin:admin888888@192.168.0.91:554/cam/realmonitor?channel=1&subtype=0] success.
+
+-------------------------- Device Infomation --------------------------
+
+-------------------------- CameraId=12 --------------------------
+
+Decoder h264 does support device type cuda.
+HardWare Initialize : hw_decoder_init success video
+Couldn't find audio stream in input
+
+CameraId=12 Can't find audio stream in the rtsp input
+
+
+Input exit to treminate!
+
+
+
+Initializing cameraId=12 start time=2024-12-23 02:51:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :243}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734893501046.mp4
+If again then record start time : 2024-12-23 02:56:41
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734893502471.mp4
+If again then record start time : 2024-12-23 02:56:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :495}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :748}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734893801166.mp4
+If again then record start time : 2024-12-23 03:01:41
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734893802488.mp4
+If again then record start time : 2024-12-23 03:01:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1000}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1251}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734894101251.mp4
+If again then record start time : 2024-12-23 03:06:41
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734894102615.mp4
+If again then record start time : 2024-12-23 03:06:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1503}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734894401365.mp4
+If again then record start time : 2024-12-23 03:11:41
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734894402624.mp4
+If again then record start time : 2024-12-23 03:11:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734894701467.mp4
+If again then record start time : 2024-12-23 03:16:41
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734894702626.mp4
+If again then record start time : 2024-12-23 03:16:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1511}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734895001571.mp4
+If again then record start time : 2024-12-23 03:21:41
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734895002632.mp4
+If again then record start time : 2024-12-23 03:21:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1511}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734895301804.mp4
+If again then record start time : 2024-12-23 03:26:41
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734895302652.mp4
+If again then record start time : 2024-12-23 03:26:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1511}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734895601859.mp4
+If again then record start time : 2024-12-23 03:31:41
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734895602789.mp4
+If again then record start time : 2024-12-23 03:31:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1511}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1511}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734895901888.mp4
+If again then record start time : 2024-12-23 03:36:41
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734895902944.mp4
+If again then record start time : 2024-12-23 03:36:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734896202026.mp4
+If again then record start time : 2024-12-23 03:41:42
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734896202948.mp4
+If again then record start time : 2024-12-23 03:41:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1510}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734896502108.mp4
+If again then record start time : 2024-12-23 03:46:42
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734896502981.mp4
+If again then record start time : 2024-12-23 03:46:42
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1511}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734896802199.mp4
+If again then record start time : 2024-12-23 03:51:42
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734896802995.mp4
+If again then record start time : 2024-12-23 03:51:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734897102294.mp4
+If again then record start time : 2024-12-23 03:56:42
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734897103010.mp4
+If again then record start time : 2024-12-23 03:56:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1511}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734897402403.mp4
+If again then record start time : 2024-12-23 04:01:42
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734897403015.mp4
+If again then record start time : 2024-12-23 04:01:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734897702518.mp4
+If again then record start time : 2024-12-23 04:06:42
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734897703310.mp4
+If again then record start time : 2024-12-23 04:06:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734898002612.mp4
+If again then record start time : 2024-12-23 04:11:42
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734898003425.mp4
+If again then record start time : 2024-12-23 04:11:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1514}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734898302723.mp4
+If again then record start time : 2024-12-23 04:16:42
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734898303442.mp4
+If again then record start time : 2024-12-23 04:16:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734898602832.mp4
+If again then record start time : 2024-12-23 04:21:42
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734898603459.mp4
+If again then record start time : 2024-12-23 04:21:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1510}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734898902931.mp4
+If again then record start time : 2024-12-23 04:26:42
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734898903478.mp4
+If again then record start time : 2024-12-23 04:26:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1510}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734899202940.mp4
+If again then record start time : 2024-12-23 04:31:42
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734899203483.mp4
+If again then record start time : 2024-12-23 04:31:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1510}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734899502944.mp4
+If again then record start time : 2024-12-23 04:36:43
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734899503564.mp4
+If again then record start time : 2024-12-23 04:36:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734899803056.mp4
+If again then record start time : 2024-12-23 04:41:43
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734899803773.mp4
+If again then record start time : 2024-12-23 04:41:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734900103161.mp4
+If again then record start time : 2024-12-23 04:46:43
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734900103952.mp4
+If again then record start time : 2024-12-23 04:46:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734900403264.mp4
+If again then record start time : 2024-12-23 04:51:43
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734900403972.mp4
+If again then record start time : 2024-12-23 04:51:43
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734900703358.mp4
+If again then record start time : 2024-12-23 04:56:43
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734900703991.mp4
+If again then record start time : 2024-12-23 04:56:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734901003469.mp4
+If again then record start time : 2024-12-23 05:01:43
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734901004006.mp4
+If again then record start time : 2024-12-23 05:01:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1514}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734901303577.mp4
+If again then record start time : 2024-12-23 05:06:43
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734901304029.mp4
+If again then record start time : 2024-12-23 05:06:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1514}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734901603674.mp4
+If again then record start time : 2024-12-23 05:11:43
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734901604061.mp4
+If again then record start time : 2024-12-23 05:11:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734901903778.mp4
+If again then record start time : 2024-12-23 05:16:43
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734901904064.mp4
+If again then record start time : 2024-12-23 05:16:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734902203884.mp4
+If again then record start time : 2024-12-23 05:21:43
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734902204090.mp4
+If again then record start time : 2024-12-23 05:21:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1514}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734902503986.mp4
+If again then record start time : 2024-12-23 05:26:44
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734902504102.mp4
+If again then record start time : 2024-12-23 05:26:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1511}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734902804115.mp4
+If again then record start time : 2024-12-23 05:31:44
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734902804090.mp4
+If again then record start time : 2024-12-23 05:31:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1510}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734903104128.mp4
+If again then record start time : 2024-12-23 05:36:44
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734903104119.mp4
+If again then record start time : 2024-12-23 05:36:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1510}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1507}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734903404186.mp4
+If again then record start time : 2024-12-23 05:41:44
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734903404361.mp4
+If again then record start time : 2024-12-23 05:41:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1507}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1506}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734903704210.mp4
+If again then record start time : 2024-12-23 05:46:44
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734903704371.mp4
+If again then record start time : 2024-12-23 05:46:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1509}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734904004393.mp4
+If again then record start time : 2024-12-23 05:51:44
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734904004314.mp4
+If again then record start time : 2024-12-23 05:51:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1510}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734904304405.mp4
+If again then record start time : 2024-12-23 05:56:44
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734904304410.mp4
+If again then record start time : 2024-12-23 05:56:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1511}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734904604415.mp4
+If again then record start time : 2024-12-23 06:01:44
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734904604519.mp4
+If again then record start time : 2024-12-23 06:01:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1514}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734904904447.mp4
+If again then record start time : 2024-12-23 06:06:44
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734904904630.mp4
+If again then record start time : 2024-12-23 06:06:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734905204486.mp4
+If again then record start time : 2024-12-23 06:11:44
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734905204723.mp4
+If again then record start time : 2024-12-23 06:11:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1513}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1512}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734905504490.mp4
+If again then record start time : 2024-12-23 06:16:44
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734905504837.mp4
+If again then record start time : 2024-12-23 06:16:44
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1514}
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734905804574.mp4
+If again then record start time : 2024-12-23 09:17:57
+
+Finished File 0 - X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\video\2024-12-23\1734905804945.mp4
+If again then record start time : 2024-12-23 09:17:57
+
+Read frame failed,Code[-541478725]:End of file
+Read frame failed,Code[-541478725]:End of file
+curl_easy_perform() post fail，reason: Couldn't connect to server
+camera_mpeg_add post resturn error code: 7
+http://81.71.74.135:5002/CamMpeg/AddCameraMpeg
+ POST JSON
+{"recordId":1734916677100,"cameraId":12,"deviceSerialNo":"IbOEHlOZQz","isGroup":true,"mpegFileName":"X:\\MediaGuardAppV31\\MediaGuardApp_Dev\\Output\\video\\2024-12-23\\1734916677978.mp4","fileSize":48,"fileFormat":"MP4","startTimestamp":1734905804565,"endTimestamp":1734916677100}
+
+curl_easy_perform() post fail，reason: Couldn't connect to server
+camera_mpeg_add post resturn error code: 7
+http://81.71.74.135:5002/CamMpeg/AddCameraMpeg
+ POST JSON
+{"recordId":1734916677098,"cameraId":8,"deviceSerialNo":"IbOEHlOZQz","isGroup":true,"mpegFileName":"X:\\MediaGuardAppV31\\MediaGuardApp_Dev\\Output\\video\\2024-12-23\\1734916677986.mp4","fileSize":48,"fileFormat":"MP4","startTimestamp":1734905804938,"endTimestamp":1734916677098}
+
+
+[Folder Picture :X:\MediaGuardAppV31\MediaGuardApp_Dev\Output\picture] [Total Files :1433}

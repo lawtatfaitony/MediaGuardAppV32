@@ -1,0 +1,89 @@
+{
+  "device_config": {
+    "maincom_id": "6000014",
+    "device_serial_no": "IbOEHlOZQz",
+    "device_serial_no_hmac": "5834f9a3218e1a895002414dd966bdedd8a13261",
+    "user": "admin2",
+    "password": "admin123",
+    "password_format": "plain text",
+    "local_login": "admin",
+    "local_password": "admin888",
+    "local_authorization": "7ad166bdb8395514bb54cc0ac21db289",
+    "reamrks": "serial no is hamc by toll from STAR-LangMXcore password format is md5_32_upcase",
+    "language_code": "zh-HK"
+  },
+  "http_server_cloud": {
+    "scheme": "http",
+    "host": "81.71.74.135",
+    "port": 5002,
+    "remarks": "cloud for api"
+  },
+  "http_server": {
+    "scheme": "http",
+    "host": "81.71.74.135",
+    "port": 8080,
+    "remarks": "device web server AIG WEB SITE"
+  },
+  "storage_server": {
+    "scheme": "http",
+    "host": "81.71.74.135",
+    "port": "5002",
+    "remarks": "The node and cloud are the same, if they are separated, you need to set another one here"
+  },
+  "global_setting": {
+    "recordTimeMinutes": 300000,
+    "picRemainMinutes": 15,
+    "videoRemainMinutes": 15,
+    "storageLimitedbytes": 502400001,
+    "ffmpegOpenInfo": false,
+    "nHDType": "kHWDeviceTypeCUDA",
+    "nHDTypeRemark": {
+      "remarks": "硬件解碼類型",
+      "hdtype": [
+        "kHWDeviceTypeNone",
+        "kHWDeviceTypeVDPAU",
+        "kHWDeviceTypeCUDA",
+        "kHWDeviceTypeVAAPI",
+        "kHWDeviceTypeDXVA2",
+        "kHWDeviceTypeQSV",
+        "kHWDeviceTypeVIDEOTOOLBOX",
+        "kHWDeviceTypeD3D11VA",
+        "kHWDeviceTypeDRM",
+        "kHWDeviceTypeOPENCL",
+        "kHWDeviceTypeMEDIACODEC"
+      ]
+    },
+    "remarks": "The node is used to configure the recording system and hardware environment ;Storage Limited bytes 502400000 = 502M ;media file record Timespan Minutes 5minutes = 60 * 1000 * 5; videoRemainMinutes::The rule keeps video files for at least 15 minutes"
+  },
+  "database": {
+    "ip": "81.71.74.135",
+    "port": 3306,
+    "base_frontend": "camera_guard_business",
+    "base_history": "camera_guard_history",
+    "user": "root",
+    "password": "root"
+  },
+  "pool": { "database_pool": 30 },
+  "carPlateRecogBusiness": {
+    "enable": false,
+    "permited_cameraId": [
+      {
+        "cameraId": 12,
+        "name": "大華SRV2_IP91",
+        "rtspIp": "192.168.0.91"
+      },
+      {
+        "cameraId": 18,
+        "name": "海康SRV2_IP91",
+        "rtspIp": "192.168.0.90"
+      }
+    ],
+    "http_server_api": "http://81.71.74.135:5005/PlateReturn",
+    "http_detect_server_api": "http://localhost:5600/detect",
+    "threshold": 0.6,
+    "user": "admin",
+    "password": "123456",
+    "reamrks": "for card plate recognition,post to detct server and return the result and then post back to http server，Post time out 200millseconds - 500millseconds,timeout will be exited!"
+  },
+  "doc_encoding": "the current document endoding is requied utf-8.本文档必须是非bom非签名的UTF,否则读取出错 *****"
+}

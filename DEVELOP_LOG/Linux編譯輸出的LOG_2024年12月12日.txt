@@ -1,0 +1,879 @@
+正在開始將檔案複製到遠端電腦。
+正在開始將檔案複製到遠端電腦。
+[rsync] rsync -t --delete -v -r --exclude=.vs --exclude=.git --exclude=out --exclude=nodemodule -8  "." rsync://tonylaw@localhost:65082/-home-tonylaw-.vs-MediaGuardApp_Dev-520058f4-2eec-43bd-bfa6-44bf54ae1f2f-src
+複製檔案已完成 (已耗用時間: 00h:00m:02s:210ms)。
+ cd $HOME/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/out/build/Linux-GCC-Debug;/usr/local/bin/cmake --build $HOME/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/out/build/Linux-GCC-Debug --target MediaGuard --config Debug;
+
+[rsync] sending incremental file list
+[rsync] MediaGuard/
+[rsync] MediaGuard/CMakeLists.txt
+[rsync] 
+[rsync] sent 136,016 bytes  received 615 bytes  16,074.24 bytes/sec
+[rsync] total size is 1,886,550,197  speedup is 13,807.63
+複製檔案已完成 (已耗用時間: 00h:00m:09s:217ms)。
+ cd $HOME/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/out/build/Linux-GCC-Debug;/usr/local/bin/cmake --build $HOME/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/out/build/Linux-GCC-Debug --target MediaGuard --config Debug;
+
+[1/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/UsbStreamHandle.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.h:6,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp: In member function ‘void UsbStreamHandle::do_decode()’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:334:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  334 |         av_init_packet(&packet);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.h:6,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp: In member function ‘void UsbStreamHandle::save_stream(AVFormatContext*, const AVPacket&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:394:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  394 |         av_init_packet(&pktFrame);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.h:6,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+[2/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/CarPlate.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/CarPlate.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/CarPlate.h:2,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/CarPlate.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[3/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/AudioStreamHandle.cpp.o
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp: In member function ‘bool AudioStreamHandle::open_codec_context(int&, AVCodecContext**, AVFormatContext*, AVMediaType)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:177:37: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 3 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  177 |         printf("fmt=%s, bit_rate=%lld, sample_rate=%d\n", av_get_sample_fmt_name((AVSampleFormat)pInputStream->codecpar->format)
+      |                                  ~~~^
+      |                                     |
+      |                                     long long int
+      |                                  %ld
+  178 |                 , pInputStream->codecpar->bit_rate
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                           |
+      |                                           int64_t {aka long int}
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp: In member function ‘bool AudioStreamHandle::init_encoder(int, AVCodecContext**, AVFormatContext*, AVMediaType)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:207:23: warning: ‘AVCodecContext::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  207 |         (*pCodecCtx)->channel_layout = 3;
+      |                       ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1060:14: note: declared here
+ 1060 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:207:23: warning: ‘AVCodecContext::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  207 |         (*pCodecCtx)->channel_layout = 3;
+      |                       ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1060:14: note: declared here
+ 1060 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:207:23: warning: ‘AVCodecContext::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  207 |         (*pCodecCtx)->channel_layout = 3;
+      |                       ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1060:14: note: declared here
+ 1060 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:208:23: warning: ‘AVCodecContext::channels’ is deprecated [-Wdeprecated-declarations]
+  208 |         (*pCodecCtx)->channels = 2;
+      |                       ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1006:9: note: declared here
+ 1006 |     int channels;
+      |         ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:208:23: warning: ‘AVCodecContext::channels’ is deprecated [-Wdeprecated-declarations]
+  208 |         (*pCodecCtx)->channels = 2;
+      |                       ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1006:9: note: declared here
+ 1006 |     int channels;
+      |         ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:208:23: warning: ‘AVCodecContext::channels’ is deprecated [-Wdeprecated-declarations]
+  208 |         (*pCodecCtx)->channels = 2;
+      |                       ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1006:9: note: declared here
+ 1006 |     int channels;
+      |         ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp: In member function ‘int AudioStreamHandle::init_audio_sample(AVFormatContext*, AVFilterGraph*, AVFilterContext*&, AVFilterContext*&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:287:35: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  287 |         if (!audioDecoderContext->channel_layout)
+      |                                   ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:287:35: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  287 |         if (!audioDecoderContext->channel_layout)
+      |                                   ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:287:35: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  287 |         if (!audioDecoderContext->channel_layout)
+      |                                   ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:38: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                      ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:38: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                      ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:38: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                      ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:106: warning: ‘AVCodecParameters::channels’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                                                                                          ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:172:14: note: declared here
+  172 |     int      channels;
+      |              ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:106: warning: ‘AVCodecParameters::channels’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                                                                                          ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:172:14: note: declared here
+  172 |     int      channels;
+      |              ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:106: warning: ‘AVCodecParameters::channels’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                                                                                          ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:172:14: note: declared here
+  172 |     int      channels;
+      |              ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:84: warning: ‘int64_t av_get_default_channel_layout(int)’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavutil/frame.h:33,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavutil/hwcontext.h:23,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec.h:27,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:313,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavutil/channel_layout.h:457:9: note: declared here
+  457 | int64_t av_get_default_channel_layout(int nb_channels);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:291:77: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  291 |         static const int64_t out_channel_layouts[] = { audioDecoderContext->channel_layout, -1 };
+      |                                                                             ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:291:77: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  291 |         static const int64_t out_channel_layouts[] = { audioDecoderContext->channel_layout, -1 };
+      |                                                                             ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:291:77: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  291 |         static const int64_t out_channel_layouts[] = { audioDecoderContext->channel_layout, -1 };
+      |                                                                             ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:291:77: warning: narrowing conversion of ‘audioDecoderContext->AVCodecParameters::channel_layout’ from ‘uint64_t’ {aka ‘long unsigned int’} to ‘int64_t’ {aka ‘long int’} [-Wnarrowing]
+  291 |         static const int64_t out_channel_layouts[] = { audioDecoderContext->channel_layout, -1 };
+      |                                                        ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp: In member function ‘void AudioStreamHandle::do_decode()’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:400:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  400 |         av_init_packet(&packet);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp: In member function ‘void AudioStreamHandle::save_stream(AVFormatContext*, const AVPacket&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:478:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  478 |         av_init_packet(&pktFrame);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+[4/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/hmac/sha1.cpp.o
+[5/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/hmac/main_hmac_test.cpp.o
+[6/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/hmac/hmac_sha1.cpp.o
+[7/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/httpserver/comm.cpp.o
+[8/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/include/Common/TransCoding.cpp.o
+[9/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/RtspStreamHandle.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/./Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.h:2,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:11:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp: In member function ‘void RtspStreamHandle::write_output_hls_stream(AVFormatContext*, const AVPacket&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:605:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  605 |         av_init_packet(&pktFrame);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/./Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.h:2,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:11:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp: In member function ‘void RtspStreamHandle::do_decode()’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:725:53: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  725 |         printf("\nReading ended,CameraId=%i read %llu\n", m_infoStream.nCameraId, nFrame);
+      |                                                  ~~~^                             ~~~~~~
+      |                                                     |                             |
+      |                                                     long long unsigned int        int64_t {aka long int}
+      |                                                  %lu
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp: In member function ‘void RtspStreamHandle::save_stream(AVFormatContext*, const AVPacket&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:882:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  882 |         av_init_packet(&pktFrame);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/./Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.h:2,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:11:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+[10/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/StreamManager.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/StreamManager.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/StreamManager.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/StreamManager.cpp: In member function ‘bool StreamMangement::GetTaskInfoList(int&, Service::TaskInfoList&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/StreamManager.cpp:378:1: warning: control reaches end of non-void function [-Wreturn-type]
+  378 | }
+      | ^
+[1/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/UsbStreamHandle.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.h:6,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp: In member function ‘void UsbStreamHandle::do_decode()’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:334:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  334 |         av_init_packet(&packet);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.h:6,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp: In member function ‘void UsbStreamHandle::save_stream(AVFormatContext*, const AVPacket&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:394:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  394 |         av_init_packet(&pktFrame);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.h:6,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/UsbStreamHandle.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+[2/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/CarPlate.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/CarPlate.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/CarPlate.h:2,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/CarPlate.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[3/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/AudioStreamHandle.cpp.o
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp: In member function ‘bool AudioStreamHandle::open_codec_context(int&, AVCodecContext**, AVFormatContext*, AVMediaType)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:177:37: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 3 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  177 |         printf("fmt=%s, bit_rate=%lld, sample_rate=%d\n", av_get_sample_fmt_name((AVSampleFormat)pInputStream->codecpar->format)
+      |                                  ~~~^
+      |                                     |
+      |                                     long long int
+      |                                  %ld
+  178 |                 , pInputStream->codecpar->bit_rate
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                           |
+      |                                           int64_t {aka long int}
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp: In member function ‘bool AudioStreamHandle::init_encoder(int, AVCodecContext**, AVFormatContext*, AVMediaType)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:207:23: warning: ‘AVCodecContext::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  207 |         (*pCodecCtx)->channel_layout = 3;
+      |                       ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1060:14: note: declared here
+ 1060 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:207:23: warning: ‘AVCodecContext::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  207 |         (*pCodecCtx)->channel_layout = 3;
+      |                       ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1060:14: note: declared here
+ 1060 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:207:23: warning: ‘AVCodecContext::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  207 |         (*pCodecCtx)->channel_layout = 3;
+      |                       ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1060:14: note: declared here
+ 1060 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:208:23: warning: ‘AVCodecContext::channels’ is deprecated [-Wdeprecated-declarations]
+  208 |         (*pCodecCtx)->channels = 2;
+      |                       ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1006:9: note: declared here
+ 1006 |     int channels;
+      |         ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:208:23: warning: ‘AVCodecContext::channels’ is deprecated [-Wdeprecated-declarations]
+  208 |         (*pCodecCtx)->channels = 2;
+      |                       ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1006:9: note: declared here
+ 1006 |     int channels;
+      |         ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:208:23: warning: ‘AVCodecContext::channels’ is deprecated [-Wdeprecated-declarations]
+  208 |         (*pCodecCtx)->channels = 2;
+      |                       ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:44,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/avcodec.h:1006:9: note: declared here
+ 1006 |     int channels;
+      |         ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp: In member function ‘int AudioStreamHandle::init_audio_sample(AVFormatContext*, AVFilterGraph*, AVFilterContext*&, AVFilterContext*&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:287:35: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  287 |         if (!audioDecoderContext->channel_layout)
+      |                                   ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:287:35: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  287 |         if (!audioDecoderContext->channel_layout)
+      |                                   ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:287:35: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  287 |         if (!audioDecoderContext->channel_layout)
+      |                                   ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:38: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                      ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:38: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                      ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:38: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                      ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:106: warning: ‘AVCodecParameters::channels’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                                                                                          ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:172:14: note: declared here
+  172 |     int      channels;
+      |              ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:106: warning: ‘AVCodecParameters::channels’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                                                                                          ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:172:14: note: declared here
+  172 |     int      channels;
+      |              ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:106: warning: ‘AVCodecParameters::channels’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                                                                                          ^~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:172:14: note: declared here
+  172 |     int      channels;
+      |              ^~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:288:84: warning: ‘int64_t av_get_default_channel_layout(int)’ is deprecated [-Wdeprecated-declarations]
+  288 |                 audioDecoderContext->channel_layout = av_get_default_channel_layout(audioDecoderContext->channels);
+      |                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavutil/frame.h:33,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavutil/hwcontext.h:23,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec.h:27,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:313,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavutil/channel_layout.h:457:9: note: declared here
+  457 | int64_t av_get_default_channel_layout(int nb_channels);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:291:77: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  291 |         static const int64_t out_channel_layouts[] = { audioDecoderContext->channel_layout, -1 };
+      |                                                                             ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:291:77: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  291 |         static const int64_t out_channel_layouts[] = { audioDecoderContext->channel_layout, -1 };
+      |                                                                             ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:291:77: warning: ‘AVCodecParameters::channel_layout’ is deprecated [-Wdeprecated-declarations]
+  291 |         static const int64_t out_channel_layouts[] = { audioDecoderContext->channel_layout, -1 };
+      |                                                                             ^~~~~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:314,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/codec_par.h:166:14: note: declared here
+  166 |     uint64_t channel_layout;
+      |              ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:291:77: warning: narrowing conversion of ‘audioDecoderContext->AVCodecParameters::channel_layout’ from ‘uint64_t’ {aka ‘long unsigned int’} to ‘int64_t’ {aka ‘long int’} [-Wnarrowing]
+  291 |         static const int64_t out_channel_layouts[] = { audioDecoderContext->channel_layout, -1 };
+      |                                                        ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp: In member function ‘void AudioStreamHandle::do_decode()’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:400:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  400 |         av_init_packet(&packet);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp: In member function ‘void AudioStreamHandle::save_stream(AVFormatContext*, const AVPacket&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:478:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  478 |         av_init_packet(&pktFrame);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.h:3,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/AudioStreamHandle.cpp:1:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+[4/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/hmac/sha1.cpp.o
+[11/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/include/Http/LibcurlHelper.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Http/LibcurlHelper.cpp: In member function ‘int LibcurlHelper::DownloadBigFile(const HttpPara&, const string&, const string&, int)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Http/LibcurlHelper.cpp:559:60: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 4 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  559 |                         snprintf(range, sizeof(range), "%lld-%lld", pNode->nStartPos, pNode->nEndPos);
+      |                                                         ~~~^        ~~~~~~~~~~~~~~~~
+      |                                                            |               |
+      |                                                            long long int   int64_t {aka long int}
+      |                                                         %ld
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Http/LibcurlHelper.cpp:559:65: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 5 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  559 |                         snprintf(range, sizeof(range), "%lld-%lld", pNode->nStartPos, pNode->nEndPos);
+      |                                                              ~~~^                     ~~~~~~~~~~~~~~
+      |                                                                 |                            |
+      |                                                                 long long int                int64_t {aka long int}
+      |                                                              %ld
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Http/LibcurlHelper.cpp: In member function ‘void LibcurlHelper::do_download(void*)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Http/LibcurlHelper.cpp:688:54: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 2 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  688 |                 printf("Download data failed,part:%lld,error[%d]:%s\n", pNode->nPart, res, curl_easy_strerror((CURLcode)res));
+      |                                                   ~~~^                  ~~~~~~~~~~~~
+      |                                                      |                         |
+      |                                                      long long int             int64_t {aka long int}
+      |                                                   %ld
+[12/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/include/ErrorInfo/ErrorMessage.cpp.o
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/ErrorInfo/ErrorMessage.cpp:4:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[5/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/hmac/main_hmac_test.cpp.o
+[6/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/hmac/hmac_sha1.cpp.o
+[7/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/httpserver/comm.cpp.o
+[8/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/include/Common/TransCoding.cpp.o
+[9/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/RtspStreamHandle.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/./Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.h:2,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:11:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp: In member function ‘void RtspStreamHandle::write_output_hls_stream(AVFormatContext*, const AVPacket&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:605:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  605 |         av_init_packet(&pktFrame);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/./Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.h:2,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:11:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp: In member function ‘void RtspStreamHandle::do_decode()’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:725:53: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  725 |         printf("\nReading ended,CameraId=%i read %llu\n", m_infoStream.nCameraId, nFrame);
+      |                                                  ~~~^                             ~~~~~~
+      |                                                     |                             |
+      |                                                     long long unsigned int        int64_t {aka long int}
+      |                                                  %lu
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp: In member function ‘void RtspStreamHandle::save_stream(AVFormatContext*, const AVPacket&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:882:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  882 |         av_init_packet(&pktFrame);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavformat/avformat.h:316,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/./Common.h:43,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.h:2,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/RtspStreamHandle.cpp:11:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/3rdparty/linux/x64/ffmpeg/include/libavcodec/packet.h:512:6: note: declared here
+  512 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+[10/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/StreamManager.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/StreamManager.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/StreamManager.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/StreamManager.cpp: In member function ‘bool StreamMangement::GetTaskInfoList(int&, Service::TaskInfoList&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/StreamManager.cpp:378:1: warning: control reaches end of non-void function [-Wreturn-type]
+  378 | }
+      | ^
+[13/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/include/Common/CvMatToBase64.cpp.o
+[11/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/include/ErrorInfo/ErrorMessage.cpp.o
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/ErrorInfo/ErrorMessage.cpp:4:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[12/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/include/Http/LibcurlHelper.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Http/LibcurlHelper.cpp: In member function ‘int LibcurlHelper::DownloadBigFile(const HttpPara&, const string&, const string&, int)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Http/LibcurlHelper.cpp:559:60: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 4 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  559 |                         snprintf(range, sizeof(range), "%lld-%lld", pNode->nStartPos, pNode->nEndPos);
+      |                                                         ~~~^        ~~~~~~~~~~~~~~~~
+      |                                                            |               |
+      |                                                            long long int   int64_t {aka long int}
+      |                                                         %ld
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Http/LibcurlHelper.cpp:559:65: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 5 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  559 |                         snprintf(range, sizeof(range), "%lld-%lld", pNode->nStartPos, pNode->nEndPos);
+      |                                                              ~~~^                     ~~~~~~~~~~~~~~
+      |                                                                 |                            |
+      |                                                                 long long int                int64_t {aka long int}
+      |                                                              %ld
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Http/LibcurlHelper.cpp: In member function ‘void LibcurlHelper::do_download(void*)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Http/LibcurlHelper.cpp:688:54: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 2 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  688 |                 printf("Download data failed,part:%lld,error[%d]:%s\n", pNode->nPart, res, curl_easy_strerror((CURLcode)res));
+      |                                                   ~~~^                  ~~~~~~~~~~~~
+      |                                                      |                         |
+      |                                                      long long int             int64_t {aka long int}
+      |                                                   %ld
+[13/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/include/Common/CvMatToBase64.cpp.o
+[14/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/include/Config/DeviceConfig.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Config/DeviceConfig.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/../Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Config/DeviceConfig.h:2,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Config/DeviceConfig.cpp:5:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[15/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/interface/DeviceInfo.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/DeviceInfo.cpp:2:9: warning: #pragma once in main file
+    2 | #pragma once
+      |         ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/DeviceInfo.cpp:13:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[16/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/ManagerController.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/ManagerController.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/ManagerController.cpp:6:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[14/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/include/Config/DeviceConfig.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Config/DeviceConfig.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/../Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Config/DeviceConfig.h:2,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Config/DeviceConfig.cpp:5:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[17/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/interface/CameraMpeg.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp:12:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp: In member function ‘bool CameraMpeg::camera_mpeg_add2(Service::CameraMpegInfo&, std::string&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp:241:1: warning: control reaches end of non-void function [-Wreturn-type]
+  241 | }
+      | ^
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp: In member function ‘bool CameraMpeg::detect_and_handle(const Stream::StreamInfo&, const Stream::PictInfo&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp:1114:1: warning: control reaches end of non-void function [-Wreturn-type]
+ 1114 | }
+      | ^
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp: In member function ‘bool CameraMpeg::get_task_list_by_camera_id(int&, Service::TaskInfoList&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp:1370:1: warning: control reaches end of non-void function [-Wreturn-type]
+ 1370 | }
+      | ^
+[18/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/main.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/main.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/main.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[15/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/interface/DeviceInfo.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/DeviceInfo.cpp:2:9: warning: #pragma once in main file
+    2 | #pragma once
+      |         ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/DeviceInfo.cpp:13:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[16/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/ManagerController.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/ManagerController.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/ManagerController.cpp:6:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[17/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/interface/CameraMpeg.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp:12:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp: In member function ‘bool CameraMpeg::camera_mpeg_add2(Service::CameraMpegInfo&, std::string&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp:241:1: warning: control reaches end of non-void function [-Wreturn-type]
+  241 | }
+      | ^
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp: In member function ‘bool CameraMpeg::detect_and_handle(const Stream::StreamInfo&, const Stream::PictInfo&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp:1114:1: warning: control reaches end of non-void function [-Wreturn-type]
+ 1114 | }
+      | ^
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp: In member function ‘bool CameraMpeg::get_task_list_by_camera_id(int&, Service::TaskInfoList&)’:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/interface/CameraMpeg.cpp:1370:1: warning: control reaches end of non-void function [-Wreturn-type]
+ 1370 | }
+      | ^
+[18/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/main.cpp.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/main.cpp:1:6: warning: #pragma once in main file
+    1 | ﻿#pragma once
+      |      ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/main.cpp:2:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+[19/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/httpserver/httpserver.cc.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc:6:9: warning: #pragma once in main file
+    6 | #pragma once
+      |         ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/../Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc:14:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc: In lambda function:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc:319:31: warning: format not a string literal and no format arguments [-Wformat-security]
+  319 |                         printf(authentic_content.str().c_str());
+      |                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc: In lambda function:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc:351:31: warning: format not a string literal and no format arguments [-Wformat-security]
+  351 |                         printf(authentic_content.str().c_str());
+      |                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[20/20] Linking CXX executable MediaGuard/MediaGuard
+[19/20] Building CXX object MediaGuard/CMakeFiles/MediaGuard.dir/src/httpserver/httpserver.cc.o
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc:6:9: warning: #pragma once in main file
+    6 | #pragma once
+      |         ^~~~
+In file included from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/../Common.h:36,
+                 from /home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc:14:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/include/Common/Macro.h:232:27: warning: backslash-newline at end of file
+  232 | #define DB_ROLLBACK(conn) \
+      |                            
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc: In lambda function:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc:319:31: warning: format not a string literal and no format arguments [-Wformat-security]
+  319 |                         printf(authentic_content.str().c_str());
+      |                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc: In lambda function:
+/home/tonylaw/.vs/MediaGuardApp_Dev/520058f4-2eec-43bd-bfa6-44bf54ae1f2f/src/MediaGuard/src/httpserver/httpserver.cc:351:31: warning: format not a string literal and no format arguments [-Wformat-security]
+  351 |                         printf(authentic_content.str().c_str());
+      |                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[20/20] Linking CXX executable MediaGuard/MediaGuard

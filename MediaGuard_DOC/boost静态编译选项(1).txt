@@ -1,0 +1,100 @@
+b2 toolset=msvc-14.0 architecture=x86 address-model=64 link=static variant=debug,release threading=multi runtime-link=static --with-coroutine --with-context --with-container --with-graph --with-signals --with-signals --with-iostreams --with-filesystem --with-date_time --with-thread --with-serialization --with-regex --with-system --with-program_options --with-math --with-mpi --with-python --with-wave --with-test --with-atomic --with-chrono --with-exception --with-locale --with-log --with-random --with-timer  --stagedir="E:\boost_1_63_0\64" --build-dir="E:\boost_1_63_0\64\build"
+
+查看boost包含哪些库：
+b2  --show-libraries
+
+
+如果添加--prefix选项且含有install关键字，则还会拷贝头文件！例如
+bjam --toolset=msvc-9.0 --prefix=D:\05_Computer\04_3rdPatry\02Boost\boost_1_44_0\output1 --with-regex link=shared  threading=multi variant=release runtime-link=shared  install
+
+
+   - atomic                   : building
+   - chrono                   : building
+   - container                : building
+   - context                  : building
+   - coroutine                : building
+   - coroutine2               : not building
+   - date_time                : building
+   - exception                : building
+   - fiber                    : not building
+   - filesystem               : building
+   - graph                    : building
+   - graph_parallel           : not building
+   - iostreams                : building
+   - locale                   : building
+   - log                      : building
+   - math                     : building
+   - metaparse                : not building
+   - mpi                      : building
+   - program_options          : building
+   - python                   : building
+   - random                   : building
+   - regex                    : building
+   - serialization            : building
+   - signals                  : building
+   - system                   : building
+   - test                     : building
+   - thread                   : building
+   - timer                    : building
+   - type_erasure             : not building
+   - wave                     : building
+
+
+解释完以上的命令后，再说完全编译的后果。
+
+--build-type=complete 表示编译所有版本（编译所有版本，不然只会编译一小部分版本（确切地说是相当于:variant=release, threading=multi;link=shared|static;runtime-link=shared））
+
+1.toolset：表示编译器工具，我安装的是VS2010，所以是msvc-10.0; 
+                    具体的版本对应关系，可以查看boost_1_62_0\tools\build\src\tools\msvc.jam中的# Version aliases节
+                    # Version aliases.
+                    .version-alias-6 = 6.0 ;
+                    .version-alias-6.5 = 6.0 ;
+                    .version-alias-7 = 7.0 ;
+                    .version-alias-8 = 8.0 ;
+                    .version-alias-9 = 9.0 ;
+                    .version-alias-10 = 10.0 ;
+                    .version-alias-11 = 11.0 ;
+                    .version-alias-12 = 12.0 ;
+                    .version-alias-14 = 14.0 ;
+2.architecture：表示架构，也就是你的CPU架构，因为我安装的是win7 32位，所以使用了x86的架构
+
+
+3.instruction-set：表示指令集，依然是8086指令集
+
+4.address-model：表示地址长度为32位或64 要有address-model=64属性，如果没有这个属性的话，会默认生成32位的平台库，加入这个选项才能生成64位的DLL
+
+5.link：表示生成动态/静态链接库，动态链接库是shared，静态链接库是static，一般都会编译成静态库，因为给出程序的时候打包boost的库会非常庞大
+
+6.variant：表示生成的Debug或者release版本，一般情况下会两种版本都会编译出来的
+
+7.threading：表示单/多线程编译，一般我们的程序都会用到多线程，所以选择了multi
+
+8.runtime-link：表示动态/静态链接C/C++运行时库(C/C++ Runtime)，我们选择了动态链接
+
+9.without/with：表示不需要编译/需要编译哪些库，一些自己不用的库可以无需编译
+选择不编译/编译哪些库。因为python、mpi等库我都用不着，所以排除之。
+还有wave、graph、math、regex、test、program_options、serialization、signals这几个库编出的静态lib都非常大，所以不需要的也可以without掉。这可以根据各人需要进行选择，默认是全部编译。但是需要注意，如果选择编译python的话，是需要python语言支持的，应该到python官方主页http://www.python.org/下载安装。查看boost包含库的命令是bjam --show-libraries。
+
+10.stage/install：stage表示只生成库文件(DLL和Lib)，install还会生成包含头文件的include目录，推荐使用stage，因为boost_1_62_0\boost中就是boost库完整的头文件，所以无需再拷贝一份出来。编译出来的库会放在stage文件夹中
+
+11.stagedir/prefix：stage时使用stagedir，install时使用prefix，表示编译生成文件的路径。推荐给不同的IDE指定不同的目录，如VS2008对应的是E:\SDK\boost\bin\vc9，VC6对应的是E:\SDK\boost\bin\vc6，否则都生成到一个目录下面，难以管理。如果使用了install参数，那么还将生成头文件目录，vc9对应的就是E:\SDK\boost\bin\vc9\include\boost-1_46\boost,vc6类似（光这路径都这样累赘，还是使用stage好）。
+
+这样一份完整的boost库就生成了，剩下就是直接使用到项目中了。
+
+上面的编译指令可以存成一个批处理，这样进入到boost_1_62_0目录后，只需要执行批处理就可以了，更方便。
+
+(现在看到为什么不推荐使用完全编译了吧，因为完全编译会编译出各种组合的所有情况，需要占用更多的空间和时间，所以建议各位朋友还是放弃了吧)
+
+使用的时候可以直接包含到项目中，然后在对应的文件中包含相应的头文件即可，例如
+
+
+bjam参数
+--build-dir=<builddir>	编译的临时文件会放在builddir里(这样比较好管理，编译完就可以把它删除了)
+--stagedir=<stagedir>	存放编译后库文件的路径，默认是stage
+--build-type=complete	编译所有版本，不然只会编译一小部分版本（确切地说是相当于:variant=release, threading=multi;link=shared|static;runtime-link=shared）
+variant=debug|release	决定编译什么版本(Debug or Release?)
+link=static|shared	决定使用静态库还是动态库。
+threading=single|multi	决定使用单线程还是多线程库。
+runtime-link=static|shared	决定是静态还是动态链接C/C++标准库。
+--with-<library>	只编译指定的库，如输入--with-regex就只编译regex库了。
+--show-libraries	显示需要编译的库名称

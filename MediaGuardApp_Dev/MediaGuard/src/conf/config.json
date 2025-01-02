@@ -1,0 +1,65 @@
+{
+    "device_config": {
+      "device_serial_no": "BFEBFBFF000906EA"
+    },
+    "http_server": {
+      "host": "81.71.74.135",
+      "port": 10009,
+      "root": ".",
+      "remark": "节点作废"
+    },
+    "http_server_cloud": {
+      "scheme": "http",
+      "host": "81.71.74.135",
+      "port": 50002,
+      "user": "admin",
+      "password": "0192023A7BBD73250516F069DF18B500",
+      "password_format": "md5_32_upcase",
+      "remark": "雲端賬戶和本地設備"
+    },
+    "storage_server": {
+      "host": "81.71.74.135",
+      "port": "10011",
+      "remark": "节点作废"
+    },
+    "pool": {
+      "database_pool": 30
+    },
+    "cloud": {
+      "cloud_enable": true,
+      "remark": "节点作废"
+    },
+    "GlobalSetting": {
+      "picRemainMinutes": 15,
+      "videoRemainMinutes": 15,
+      "storageLimitedbytes": 1111,
+      "nHDType": "kHWDeviceTypeNone",
+      "nHDTypeRemark": {
+        "remark": "硬件解码类型",
+        "hdtype": [
+          "kHWDeviceTypeNone",
+          "kHWDeviceTypeVDPAU",
+          "kHWDeviceTypeCUDA",
+          "kHWDeviceTypeVAAPI",
+          "kHWDeviceTypeDXVA2",
+          "kHWDeviceTypeQSV",
+          "kHWDeviceTypeVIDEOTOOLBOX",
+          "kHWDeviceTypeD3D11VA",
+          "kHWDeviceTypeDRM",
+          "kHWDeviceTypeOPENCL",
+          "kHWDeviceTypeMEDIACODEC"
+        ]
+      },
+      "remark": "节点作废"
+    },
+    "database": {
+      "ip": "81.71.74.135",
+      "base_frontend": "camera_guard_business",
+      "base_history": "camera_guard_history",
+      "user": "root",
+      "password": "root",
+      "port": 3306,
+      "pool": { "database_pool": 30 }
+    }
+  }
+  

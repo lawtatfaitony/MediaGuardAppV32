@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEST API TOKEN</title>
+
+
+    <!-- Bootstrap v4.1.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/dplayer/1.26.0/DPlayer.min.js"></script>
+
+    <script src="md5.js"></script>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper container  mt-3" style="max-width:700px;">
+        <span class="label label-primary p-1 bg-warning">
+            開啟互聯網訪問私有網絡
+        </span>
+        <span class="label label-primary p-1 bg-warning">
+            Enable internet access to private network
+        </span>
+        <p>
+            GOOGLE CHROME AUTO PALY CMD TO RUN:
+            <br />
+            FIRST: Explore to Folder C:\Program Files\Google\Chrome\Application  <br />
+            SECOND:  chrome.exe --autoplay-policy=no-user-gesture-required
+            <hr />
+            https://developer.chrome.com/blog/private-network-access-update/#web-transport
+        </p>
+        <span class="label label-primary p-1 bg-warning">
+            <a id="btnComplexRequest" href="https://web.dev/cross-origin-resource-sharing/?utm_source=devtools" target="_blank" class="btn btn-success p-2">Complex Request</a>
+            Preflight requests for complex HTTP calls 
+        </span>
+        <p>
+            The CORS specification defines a complex request as
+
+            A request that uses methods other than GET, POST, or HEAD
+            A request that includes headers other than Accept, Accept-Language or Content-Language
+            A request that has a Content-Type header other than application/x-www-form-urlencoded, multipart/form-data, or text/plain
+            Browsers create a preflight request if it is needed. It's an OPTIONS request like below and is sent before the actual request message.
+        </p>
+    </div>
+    <div class="wrapper container  mt-3" style="max-width:700px;">
+
+        <span>TEST PLYER TOKEN <br> Token </span>
+
+         
+    </div>
+
+    <hr />
+
+    <div class="wrapper container  mt-3" style="max-width:700px;">
+
+         
+    </div>
+     
+     
+</body>
+</html>

@@ -1,0 +1,5 @@
+What is PNA 私域網路?
+
+它的全名為 Private Network Access 會被簡稱為 PNA ，翻譯為 私有網路存取 。 什麼是私域網路存取呢，是指一些個人組織或是政府組織中，例如公司的內網，不希望在外部被存取到，就會加一個防火牆來限制。 這個網站就只能在公司的區域網路或使用 VPN 進行訪問，而這個就是私域網路。
+
+Its full name is Private Network Access, which is abbreviated as PNA. What is private network access? It refers to some personal organizations or government organizations, such as the company's intranet, which do not want to be accessed externally, so a firewall is added to restrict it. This site can only be accessed in the company's LAN or using VPN, which is a private network.

@@ -1,0 +1,49 @@
+#include <libavformat/avformat.h>
+
+int main() {
+    AVFormatContext *format_ctx = NULL;
+    AVDictionary *options = NULL;
+    int ret;
+
+    // 初始化 FFmpeg
+    avformat_network_init();
+
+    // 设置网络参数
+    av_dict_set(&options, "http_proxy", "http://your_proxy:port", 0);
+
+    // 打开媒体流
+    ret = avformat_open_input(&format_ctx, "http://your_url", NULL, &options);
+    if (ret < 0) {
+        fprintf(stderr, "Could not open input stream: %s\n", av_err2str(ret));
+        av_dict_free(&options);
+        avformat_network_deinit();
+        return ret;
+    }
+
+    // 处理网络中断重连
+    while (1) {
+        ret = av_read_frame(format_ctx, &pkt);
+        if (ret < 0) {
+            if (ret == AVERROR(EAGAIN)) {
+                // 网络中断，尝试重连
+                av_dict_set(&options, "http_proxy", "http://your_proxy:port", 0);
+                avformat_open_input(&format_ctx, "http://your_url", NULL, &options);
+            } else {
+                // 其他错误
+                fprintf(stderr, "Could not read frame: %s\n", av_err2str(ret));
+                break;
+            }
+        } else {
+            // 处理数据帧
+            process_frame(pkt);
+            av_packet_unref(pkt);
+        }
+    }
+
+    // 清理资源
+    avformat_close_input(&format_ctx);
+    av_dict_free(&options);
+    avformat_network_deinit();
+
+    return 0;
+}

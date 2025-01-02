@@ -1,0 +1,241 @@
+#####################################################################
+#
+# @brief	CMakeLists of project 
+# cmake ../ -G "Visual Studio 17 2022"
+# cmake ../ -G "Unix Makefiles"
+# 
+#####################################################################
+cmake_minimum_required (VERSION 3.8)
+ 
+# HEADER START ------------------------------------------------------------------
+
+message("MediaGuard----------------------------------------------------------------------------------------------")
+message("CMAKE_CURRENT_SOURCE_DIR = " ${CMAKE_CURRENT_SOURCE_DIR})  
+message("MediaGuard----------------------------------------------------------------------------------------------")
+   
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ 
+#set project name
+set(PROJECT_NAME MediaGuard)
+project(${PROJECT_NAME})
+
+set(CMAKE_CURRENT_SOURCE_DIR ${CMAKE_SOURCE_DIR})
+ 
+# ws2def.h重定义
+if(WIN32)
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  /DWIN32_LEAN_AND_MEAN")
+endif()
+
+# 追加CMake查找目录
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/cmake")
+
+# 獲取項目的根路徑
+message(STATUS "CMAKE ROOT: ${CMAKE_SOURCE_DIR}")
+ 
+set(PROJECT_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}/src/include/)
+message(${PROJECT_NAME} "PROJECT_INCLUDE_DIR: ${PROJECT_INCLUDE_DIR}")
+
+set(PROJECT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)  
+
+set(3RDPARTY_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/include)  
+
+# HEADER END --------------------------------------------------------------------
+  
+ 
+# 路徑和引用系統參數
+IF(WIN32) # WIN32 版本 
+    
+    # opencv 4.9 改用 find_package(OpenCV REQUIRED)  
+    set(OpenCV_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/windows/x64/opencv4.9/include) 
+    set(OpenCV_LIBRARIES ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/windows/x64/opencv4.9/lib) 
+
+    # ffmpeg  4.2.2  改用 find_package(FFmpeg REQUIRED) 
+    set(FFmpeg_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/windows/x64/ffmpeg/include)  
+	set(FFmpeg_LIBRARY_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/windows/x64/ffmpeg/lib)  
+
+    # openssl 已經編譯版本 openssl1.1.1b
+    set(Openssl_INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/3rdparty/windows/x64/openssl1.1.1b/include)
+    set(Openssl_LIBRARIES ${CMAKE_SOURCE_DIR}/3rdparty/windows/x64/openssl1.1.1b/lib)
+
+    # rapidjson
+    set(RAPIDJSON_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/windows/x64/rapidjson/include)
+    include_directories(${RAPIDJSON_INCLUDE_DIR}) 
+ 
+elseif(UNIX) # LINUX 版本 
+
+    # opencv 4.9 改用 find_package(OpenCV REQUIRED)  
+    set(${OpenCV_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/linux/x64/opencv4.9/include) 
+    set(OpenCV_LIBRARIES ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/linux/x64/opencv4.9/lib) 
+
+    # ffmpeg 4.2.2 改用 find_package(FFmpeg REQUIRED) 
+    set(FFmpeg_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/linux/x64/ffmpeg/include) 
+	set(FFmpeg_LIBRARY_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/linux/x64/ffmpeg/lib) 
+
+    # 需要openssl編譯版本 openssl-1.1.1q
+    set(Openssl_INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/3rdparty/linux/x64/openssl-1.1.1q/include)
+    set(Openssl_LIBRARIES ${CMAKE_SOURCE_DIR}/3rdparty/linux/x64/openssl-1.1.1q/lib)
+     
+    # rapidjson
+    set(RAPIDJSON_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/linux/x64/rapidjson/include)
+    include_directories(${RAPIDJSON_INCLUDE_DIR}) 
+
+    
+elseif(APPLE) # Apple 版本的包是沒有的,需要下載安裝引用-------------------------------------------
+
+    # opencv 4.9 改用 find_package(OpenCV REQUIRED)  
+    set(${OpenCV_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/unix/x64/opencv4.9/include) 
+    set(OpenCV_LIBRARIES ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/unix/x64/opencv4.9/lib) 
+
+    # ffmpeg 4.2.2 改用 find_package(FFmpeg REQUIRED) 
+    set(FFmpeg_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/unix/x64/ffmpeg/include)  
+	set(FFmpeg_LIBRARY_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/unix/x64/ffmpeg/lib) 
+
+    # 需要openssl編譯版本
+    set(Openssl_INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/3rdparty/unix/x64/openssl-1.1.1q/include)
+    set(Openssl_LIBRARIES ${CMAKE_SOURCE_DIR}/3rdparty/unix/x64/openssl-1.1.1q/lib)
+
+    # rapidjson
+    set(RAPIDJSON_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/linux/x64/rapidjson/include)
+    include_directories(${RAPIDJSON_INCLUDE_DIR}) 
+endif()
+
+# 打印有效的 PROJECT_INCLUDE_DIR 路徑 
+message(STATUS "\n================ PROJECT_INCLUDE_DIR ============\n")
+message(STATUS "======= PROJECT_INCLUDE_DIR VALIDATE MSG: ${PROJECT_INCLUDE_DIR} ========") 
+execute_process(COMMAND ${CMAKE_COMMAND} -E chdir ${PROJECT_INCLUDE_DIR} ${CMAKE_COMMAND} -E dir .)
+
+# 打印有效的 3RDPARTY_INCLUDE 路徑 
+message(STATUS "\n================ 3RDPARTY_INCLUDE ============\n")
+message(STATUS "======= 3RDPARTY_INCLUDE VALIDATE MSG: ${3RDPARTY_INCLUDE} ========") 
+execute_process(COMMAND ${CMAKE_COMMAND} -E chdir ${3RDPARTY_INCLUDE} ${CMAKE_COMMAND} -E dir .)
+
+# 打印有效的 OPENCV_INCLUDE_DIR 路徑 
+message(STATUS "\n================ OPENCV_INCLUDE_DIR ============\n")
+message(STATUS "======= OPENCV_INCLUDE_DIR VALIDATE MSG: ${OpenCV_INCLUDE_DIRS} ========") 
+execute_process(COMMAND ${CMAKE_COMMAND} -E chdir ${OpenCV_INCLUDE_DIRS} ${CMAKE_COMMAND} -E dir .)
+ 
+# 打印有效的 OpenCV_LIBRARIES 路徑
+message(STATUS "======= OpenCV_LIBRARIES VALIDATE MSG: ${OpenCV_LIBRARIES} ========") 
+execute_process(COMMAND ${CMAKE_COMMAND} -E chdir ${OpenCV_LIBRARIES} ${CMAKE_COMMAND} -E dir .)
+
+# 打印有效的 Openssl_INCLUDE_DIRS 路徑
+message(STATUS "\n================ Openssl_INCLUDE_DIRS ============\n")
+message(STATUS "======= OPENSSL_INCLUDE_DIR VALIDATE MSG: ${Openssl_INCLUDE_DIRS} ========") 
+execute_process(COMMAND ${CMAKE_COMMAND} -E chdir ${Openssl_INCLUDE_DIRS} ${CMAKE_COMMAND} -E dir .)
+
+# 打印有效的 Openssl_LIBRARIES 路徑
+message(STATUS "======= Openssl_LIBRARIES VALIDATE MSG: ${Openssl_LIBRARIES} ========") 
+execute_process(COMMAND ${CMAKE_COMMAND} -E chdir ${Openssl_LIBRARIES} ${CMAKE_COMMAND} -E dir .)
+
+# 打印有效的 FFmpeg_INCLUDE_DIRS 路徑
+message(STATUS "======= FFmpeg_INCLUDE_DIRS VALIDATE MSG: ${FFmpeg_INCLUDE_DIRS} ========") 
+execute_process(COMMAND ${CMAKE_COMMAND} -E chdir ${FFmpeg_INCLUDE_DIRS} ${CMAKE_COMMAND} -E dir .)
+  
+# 打印有效的 FFmpeg_LIBRARY_DIRS 路徑
+message(STATUS "======= FFmpeg_LIBRARY_DIRS VALIDATE MSG: ${FFmpeg_LIBRARY_DIRS} ========") 
+execute_process(COMMAND ${CMAKE_COMMAND} -E chdir ${FFmpeg_LIBRARY_DIRS} ${CMAKE_COMMAND} -E dir .)
+
+
+# 包含 CMakeListsCheckPath.cmake 文件 用於檢查路徑
+# include("CMakeListsCheckPath.cmake") 方法不對
+
+# include local header files
+include_directories(${PROJECT_INCLUDE_DIR}) 
+
+# include 3RDPARTY_INCLUDE
+include_directories(${3RDPARTY_INCLUDE}) 
+
+
+
+# Include directories LOCAL_SOURCES_DIR 
+file(GLOB  LOCAL_SOURCES_DIR
+    "./src/*.cpp"
+    "./src/hmac/*.cpp"
+    "./src/httpserver/*.cpp"
+    "./src/httpserver/*.cc"
+    "./src/interface/*.cpp"
+    "./src/include/Basic/*.cpp"
+    "./src/include/Common/*.cpp"
+    "./src/include/Config/*.cpp"
+    "./src/include/easylogging/*.cpp"
+    "./src/include/ErrorInfo/*.cpp"
+    "./src/include/Http/*.cpp"
+    "./src/include/Httplib/*.cpp"  
+)
+  
+message(STATUS "\n================ LOCAL_SOURCES_DIR ============\n")
+foreach(file ${LOCAL_SOURCES_DIR})
+   message(${PROJECT_NAME} "*** LOCAL_SOURCES_DIR ***: ${file}") 
+endforeach() 
+
+file(GLOB LOCAL_HEADER_DIR 
+    "./src/*.h"
+    "./src//hmac/*.h"
+    "./src//httpserver/*.h"
+    "./src//include/Basic/*.h"
+    "./src//include/Common/*.h"
+    "./src//include/Config/*.h"
+    "./src//include/easylogging/*.h"
+    "./src//include/ErrorInfo/*.h"
+    "./src//include/Http/*.h"
+    "./src//include/Httplib/*.h"
+    "./src//interface/*.h"
+) 
+message(STATUS "\n================ LOCAL_HEADER_DIR ============\n")
+foreach(file ${LOCAL_HEADER_DIR})
+   message(${PROJECT_NAME} "*** GLOB  LOCAL_HEADER_DIR ***:: ${file}") 
+endforeach()
+ 
+# opencv 4.8.1
+include_directories(${OpenCV_INCLUDE_DIRS}) 
+link_directories(${OpenCV_LIBRARY_DIRS})
+
+# ffmpeg 4.2.2
+include_directories(${FFmpeg_INCLUDE_DIRS}) 
+link_directories(${FFmpeg_LIBRARY_DIRS})
+
+# Openssl 
+include_directories(${Openssl_INCLUDE_DIRS}) 
+link_directories(${Openssl_LIBRARIES})
+
+# -------------------------------------------------------------------------------------------------------------
+# 将源代码添加到此项目的可执行文件
+add_executable(${PROJECT_NAME} ${LOCAL_SOURCES_DIR} ${LOCAL_HEADER_DIR})
+# -------------------------------------------------------------------------------------------------------------
+
+# 以下的引用需要放在 add_executable 函數後面
+ 
+# 设置包含目录，确保项目中可以找到头文件
+target_include_directories(${PROJECT_NAME} PRIVATE ${LOCAL_INCLUDE_DIR})
+ 
+# 連結 FFmpeg 庫  
+target_link_libraries(${PROJECT_NAME} PRIVATE ${FFmpeg_LIBRARY_DIRS})
+ 
+# 連結 OpenCV 庫 
+target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenCV_LIBS}) 
+
+# 鏈接 OpenSSL 庫 
+target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenCV_LIBS}) 
+
+# set link libraries
+if(MSVC)
+    message("Set link library")
+    set_property(TARGET 
+    ${PROJECT_NAME}
+    PROPERTY
+    LINK_LIBRARIES
+    $<IF:$<CONFIG:Debug>,${PROJECT_LINK_LIBRARIES_DEBUG},${PROJECT_LINK_LIBRARIES_RELEASE}>)
+    get_property(link_lib 
+        TARGET
+        ${PROJECT_NAME}
+        PROPERTY
+        LINK_LIBRARIES
+    )
+    foreach(lib ${link_lib})
+        message("link library: \t ${lib}")
+    endforeach()
+endif()
+
+message("=================== ${PROJECT_NAME} =======CMAKE SETTING BUILD END")

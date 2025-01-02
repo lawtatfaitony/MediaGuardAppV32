@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEST API TOKEN</title>
+
+
+    <!-- Bootstrap v4.1.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/dplayer/1.26.0/DPlayer.min.js"></script>
+
+    <script src="md5.js"></script>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <p>
+        <a id="btnRetrun" href="test.html" target="_blank" class="btn btn-sm btn-success p-1">Return</a>
+    </p>
+    <div class="wrapper container  mt-3" style="max-width:700px;">
+
+        <span class="btn-success p-1 rounded">1.TEST PLYER TOKEN</span>
+
+        <div class="row p-3 mb-1">
+            <label>HLS URL </label> <input id="hlsUrlx" value="http://192.168.0.146:180/hls/6/1/1/index.m3u8?token=2ccd575f54be0d71277a82f8baf2e8ea" />
+        </div>
+
+        <div class="row p-3 mb-1">
+            <label>INPUT ACCOUNT </label> <input id="mediaUserName" value="media" />
+        </div>
+        <div class="row p-3 mb-3">
+
+            <label>INPUT PASSWORD </label> <input id="mediaPassword" value="123456" /><br />
+            <span class="text-dark" title="32bit lower case">media:123456 MD5 = 2ccd575f54be0d71277a82f8baf2e8ea</span>
+        </div>
+        <div class="row p-3">
+            <div id="dplayer1"></div>
+        </div>
+
+        <div class="row p-3">
+            <button id="submitPlay1" class="btn btn-success"> PLAY </button><br />
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="wrapper container  mt-3" style="max-width:700px;">
+
+        <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script>
+        <video id="video1" style="width:500px;height: 300px; border: 1px solid red;">
+            测试
+        </video>
+
+    </div>
+    <hr />
+
+    <div class="wrapper container  mt-3 mb-5" style="max-width:700px;">
+
+        <span class="btn-success p-1 rounded">2.TEST PLYER API TOKEN (/play) </span>
+
+        <div class="row p-3 mb-1">
+            <label>MEDIA SERVER API URL </label> <input id="mediaServerPlayApi" value="http://192.168.0.146:180/play?deviceId=6&channel=1&stream=1" />
+            <span class="text-white bg-success" title="CameraId = 6">CameraId = 6 ; Substream/SubType = 1 </span>
+        </div>
+
+        <div class="row p-3 mb-1">
+            <label>MEDIA SERVER ACCOUNT </label> <input id="mediaServerUserName" value="media" />
+        </div>
+        <div class="row p-3 mb-3">
+
+            <label>MEDIA SERVER PASSWORD </label> <input id="mediaServerPassword" value="123456" /><br />
+            <span class="text-dark mb-2" title="32bit lower case">Text/plain</span>
+
+            <span class="text-white bg-success" id="mediaServerToken" title="token = mediaServerUserName:mediaServerPassword"></span>
+        </div>
+        <div class="row p-3 mb-1">
+            <label>HLS URL </label> <input id="mediaServerHlsUrlx" value="http://192.168.0.146:180/hls/6/1/1/index.m3u8?token=2ccd575f54be0d71277a82f8baf2e8ea" />
+        </div>
+        <div class="row p-3">
+            <div id="dplayerPlay"></div>
+        </div>
+        <div class="row p-3 mb-1">
+            <label>TS DOWNLOAD</label> <input id="mediaTSinput" value="http://192.168.0.146:180/hls/6/1/1/lixx-56AA.ts" />
+        </div>
+        <div class="row p-3 text-nowrap">
+            <div class="col-7">
+                <button id="mediaPlay1" class="btn btn-success p-2">MEDIA API CORS TEST(/play) </button>
+            </div>
+            <div class="col-1">
+               &nbsp;
+            </div>
+            <div class="col-4">
+                <a id="btnCORS" href="#" target="_blank" title="click left button first" class="btn btn-success p-2">TS CORS TEST(lixx-56AA.ts)</a>
+            </div>
+             
+        </div>
+    </div>
+
+    <div  class="wrapper container  mt-3 mb-5" style="max-width:700px;">
+
+        <span class="label label-primary p-1 rounded">Ref:</span>
+        <p> 
+            PNA
+            https://developer.chrome.com/blog/private-network-access-update/
+            https://dplayer.js.org/zh/guide.html#hls
+            https://www.cnblogs.com/fallTakeMan/p/12099242.html
+            https://www.w3schools.com/tags/av_prop_buffered.asp
+            https://www.0uu.cc/archives/10/
+            https://dplayer.js.org/zh/guide.html#%E5%8F%82%E6%95%B0
+
+            https://ithelp.ithome.com.tw/articles/10206181
+
+            https://blog.csdn.net/weixin_42402812/article/details/115905387
+
+            sample demo
+            https://www.4z1.cn/dp/DPlayer.html?utm_source=ld246.com
+     
+        </p>
+    </div>
+    <script>
+         
+        //PLAY TEST
+        $("#submitPlay1").click(function () {
+
+            var hlsUrl = $("#hlsUrlx").val();
+
+            console.log(hlsUrl);
+
+            const dp1 = new DPlayer({
+                container: document.getElementById('dplayer1'),
+                screenshot: true,
+                autoplay: true,
+                video: {
+                    url: hlsUrl,
+                    type: 'auto'
+                }
+            });
+        });
+
+    </script>
+
+
+    <script>
+        if (Hls.isSupported()) {
+
+            var hlsUrl = $("#hlsUrlx").val();
+            console.log(hlsUrl);
+            // 获取 video 标签
+            var video = document.getElementById('video1');
+            // 实例化 Hls 对象
+            var hls = new Hls();
+            // 传入路径
+            hls.loadSource(hlsUrl);
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                video.muted = false;
+                video.play(); // 调用播放 API
+            }); 
+
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = videoSrc;
+            video.addEventListener('canplay', function () {
+                video.play();
+            });
+        }
+
+        //HLS
+                    //var video = document.getElementById(videoId);
+                    //if (Hls.isSupported()) {
+                    //    var hls = new Hls({
+                    //        debug: true,
+                    //    });
+                    //    hls.loadSource(videoSrc);
+                    //    hls.attachMedia(video);
+                    //    hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+                    //        video.muted = false;
+                    //        video.play();
+                    //    });
+                    //}
+                    //// hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+                    //// When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
+                    //// This is using the built-in support of the plain video element, without using hls.js.
+                    //else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                    //    video.src = videoSrc;
+                    //    video.addEventListener('canplay', function () {
+                    //        video.play();
+                    //    });
+                    //}
+    </script>
+
+    <script>
+
+        $("#mediaPlay1").click(function () {
+
+            console.log($("#mediaTSinput").val());
+            $("#btnCORS").attr("href", $("#mediaTSinput").val())
+
+            var mediaServerUserName = $("#mediaServerUserName").val();
+            var mediaServerPassword = $("#mediaServerPassword").val();
+
+            //（2）Bearer方式
+            //Bearer认证方式更安全，不易被破解攻击，加密方式如下
+            //Authorization: Bearer md5(username: password)
+
+            var bearerToken = mediaServerUserName + ":" + mediaServerPassword;
+            bearerToken = md5(bearerToken);
+            $("#mediaServerToken").text(bearerToken);
+            
+            var playApiUrl = $("#mediaServerPlayApi").val(); 
+            $.ajax({
+                url: playApiUrl,
+                headers: { "Authorization": "Bearer " + bearerToken },
+                type: "get",
+                statusCode: {
+                    401: function () {
+                        alert("token error(Authorized fail)");
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+
+                    console.log("jqXHR  = \n" );
+                    console.log(jqXHR);
+                    console.log("\n");
+
+                    if (jqXHR.status == 401) {
+                        alert("token error(Authorized fail) " + jqXHR.responseText);
+                    }
+                    /*弹出jqXHR对象的信息*/
+                    console.log("jqXHR.responseText=" + jqXHR.responseText);
+                    console.log("jqXHR.status=" + jqXHR.status);
+                    console.log("jqXHR.readyState=" + jqXHR.readyState);
+                    console.log("jqXHR.statusText=" + jqXHR.statusText);
+                    
+                    /*弹出其他两个参数的信息*/
+                    console.log("jqXHR./*弹出其他两个参数的信息*/");
+                    console.log("textStatus = " + textStatus);
+                    console.log("errorThrown = " + errorThrown);  
+                },
+                success: function (res) {
+                    var mediaServerHlsUrlx = $("#mediaServerHlsUrlx").val();
+
+                    console.log(mediaServerHlsUrlx);
+
+                    const dp1 = new DPlayer({
+                        container: document.getElementById('dplayerPlay'),
+                        screenshot: true,
+                        autoplay: true,
+                        mutex: false,
+                        video: {
+                            url: mediaServerHlsUrlx,
+                            type: 'auto'
+                        }
+                    });
+                    console.log({ "media server play requres": res });
+                    //switch to Dplayer
+                    alert("SUCCESS");
+                }
+            });
+        });
+
+
+    </script>
+</body>
+</html>
