@@ -1,3 +1,17 @@
+# CMAKE 編譯問題
+
+### 撤換交叉編譯模式注意問題:
+
+​		如果之前是 x64 (WIN32)模式情況下,撤換到LINUX會比較慢: 右下角一直提示 : 
+
+![image-20250103174456247](README_IMGs/cmake_debug_common7/image-20250103174456247.png)
+
+​				**正在準備 CMake專案......需要時間重新準備專案。**
+
+![image-20250103174432334](README_IMGs/cmake_debug_common7/image-20250103174432334.png)
+
+![image-20250103174739900](README_IMGs/cmake_debug_common7/image-20250103174739900.png)
+
  Visual Studio 2022 中加載 CMake 項目時出現了問題，具體是找不到所需的模組目錄。以下是一些可能的解決方案：
 
 ![修復 Visual Studio 的 CMake 配置](README_IMGs/新增 文本文档/修復 Visual Studio 的 CMake 配置.png)
@@ -12,6 +26,8 @@ C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtens
 ```
 
 這表明 CMake 的安裝存在問題，特別是 `CMAKE_ROOT`（CMake 的核心模組目錄）無法找到，導致 CMake 無法正常運行。
+
+
 
 以下是解決此問題的步驟：
 

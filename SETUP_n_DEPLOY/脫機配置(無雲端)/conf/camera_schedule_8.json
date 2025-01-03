@@ -1,1 +1,37 @@
-{"meta":{"success":true,"message":"OK","errorCode":-1},"data":{"cameraId":8,"cameraName":"海康攝像IP92:","cameraIp":"192.168.0.92","deviceId":3007,"deviceName":"HUA_SERVER1","siteId":"10","maincomId":"6000014","policyIsStart":true,"saveVideo":true,"saveMpeg4":true,"hlsOutput":true,"rtmpOutput":false,"savePic":true,"savePictRate":800,"sundayStart":"00:00:00","sundayEnd":"00:00:00","mondayStart":"00:00:00","mondayEnd":"00:00:00","tuesdayStart":"00:00:00","tuesdayEnd":"00:00:00","wednesdayStart":"00:00:00","wednesdayEnd":"00:00:00","thursdayStart":"00:00:00","thursdayEnd":"00:00:00","fridayStart":"00:00:00","fridayEnd":"00:00:00","saturdayStart":"00:00:00","saturdayEnd":"00:00:00"}}
+{
+	"meta": {
+		"success": true,
+		"message": "OK",
+		"errorCode": -1
+	},
+	"data": {
+		"cameraId": 8,
+		"cameraName": "海康攝像IP92:",
+		"cameraIp": "192.168.0.92",
+		"deviceId": 3007,
+		"deviceName": "HUA_SERVER1",
+		"siteId": "10",
+		"maincomId": "6000014",
+		"policyIsStart": true,
+		"saveVideo": true,
+		"saveMpeg4": true,
+		"hlsOutput": true,
+		"rtmpOutput": false,
+		"savePic": true,
+		"savePictRate": 800,
+		"sundayStart": "00:00:00",
+		"sundayEnd": "00:00:00",
+		"mondayStart": "00:00:00",
+		"mondayEnd": "00:00:00",
+		"tuesdayStart": "00:00:00",
+		"tuesdayEnd": "00:00:00",
+		"wednesdayStart": "00:00:00",
+		"wednesdayEnd": "00:00:00",
+		"thursdayStart": "00:00:00",
+		"thursdayEnd": "00:00:00",
+		"fridayStart": "00:00:00",
+		"fridayEnd": "00:00:00",
+		"saturdayStart": "00:00:00",
+		"saturdayEnd": "00:00:00"
+	}
+}
