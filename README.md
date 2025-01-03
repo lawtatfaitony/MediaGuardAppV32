@@ -144,3 +144,5 @@ StreamInfo 是傳入鏡頭對象/解碼單元(RtspStreamHandle.cpp)的參數對�
 ## 網絡穿透
 
 實現雲平台與設備互訪, 目前技術問題, 不使用STUN協議實現,而是使用CURL命令獲取公網IP同步到雲端,LINUX版本需要安裝CURL組件。
+
+V3.2
