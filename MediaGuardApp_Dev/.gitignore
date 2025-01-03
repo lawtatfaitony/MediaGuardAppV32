@@ -2,7 +2,9 @@
 Other_ExcludeToGit/
 .vs/
 out/
-output/
+output/video/
+output/picture/
+output/hls/
 build/
 # Windows
 [Dd]esktop.ini
@@ -18,3 +20,37 @@ $RECYCLE.BIN/
 
 # Node.js
 node_modules/
+
+# C++ ------------------------------------------------
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
