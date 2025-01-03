@@ -1,4 +1,4 @@
-﻿# Media Guard App V3.2
+# Media Guard App V3.2
 
 ## 開發願景與目標: 
 
@@ -47,7 +47,7 @@ linux 版編譯成功,運行需要支持CUDA顯卡的 Ubuntu 22.x 驅動才能�
 
 ***
 ## 代碼結構 SOFTWARE STRUCTURE
-
+**Linux 系统开发板安装 GCC 交叉编译器​**
 **參考LowLevelAnalysic_MediaGuard.pdf  核心文件三个**     
 
 1. RtspStreamHandle.cpp 解码单元 對當前鏡頭單元解碼 MP4 FLV HLS JPEG RTMP等等  
