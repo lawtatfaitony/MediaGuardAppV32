@@ -232,9 +232,14 @@ public:
 
 		//FILE* fp = fopen(filename, "rb");
 
-		FILE* fp = nullptr;
-		fopen_s(&fp, filename, "rb");
-		  
+		FILE* fp = nullptr; 
+
+#ifdef _WIN32
+		fopen_s(&fp, filename, "r");
+#else
+		fp = fopen(filename, "r");
+#endif
+		
 		if (!fp) {
 			std::cerr << "\nCAN NOT OPEN JSON FILE : " << filename << "\n" << std::endl; 
 			return jsonString;

@@ -2,9 +2,9 @@
 #include <iostream> 
 #include <cstring> 
 #include <cstdint> // 用於 uint16_t, uint32_t 等類型
-#include <io.h> 
+#include <cstdlib>
 #include <cerrno> 
-#include <stdio.h> 
+#include <stdio.h>
 #include <cstdio>    // 包含 popen 和 pclose 的定義 
 #include <memory>    // 包含 std::unique_ptr
 #include <stdexcept> // 包含 std::runtime_error
@@ -18,10 +18,10 @@
 #else
 #include <arpa/inet.h> // POSIX socket
 #include <unistd.h>    // POSIX standard 
+#include <netdb.h>
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <netinet/in.h> 
-
+#include <netinet/in.h>
 #endif
   
  
@@ -55,8 +55,6 @@ public:
 	// 使用STUN 協議失敗,保留這兩個函數以後優化或者改造 結果 0.0.0.0 
 	void get_local_internet_ip_and_port(char*& loacal_ip, int& local_port);
 	
-	
-
 	// 通過curl 客戶端命令 獲取外網ip的方式是可用的 ok 2024-12-29
 	// 保留log文件的方式
 	std::string get_public_ip_by_curl();

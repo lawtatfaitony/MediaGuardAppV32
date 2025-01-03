@@ -29,7 +29,7 @@
       "generator": "Ninja",
       "configurationType": "Debug",
       "cmakeExecutable": "cmake",
-      "remoteCopySourcesExclusionList": [ ".vs", ".git", "out", "nodemodule" ],
+      "remoteCopySourcesExclusionList": [ ".vs", ".git", "out", "nodemodule", "output/video", "output/picture" ],
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",

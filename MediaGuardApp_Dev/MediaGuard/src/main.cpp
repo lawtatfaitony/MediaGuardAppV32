@@ -16,8 +16,6 @@ std::thread m_http_server;
 
 int main(int argc, char** argv)
 { 
-	//TEST
-	ManagerController::clean_video_store();
 
 	//測試車牌配置節點 test============================================ 
 	/*auto permitedCamList = DEVICE_CONFIG.cfgCarPlateRecogBusiness.PermitedCamList;

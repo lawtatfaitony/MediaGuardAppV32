@@ -200,7 +200,7 @@ bool UserPwdValidByBearAuthorization(const httplib::Request& req, httplib::Respo
 	if (authentication != local_authorization)
 	{
 		res.status = 401;
-		res.set_content(transcoding::T2UTF8("not authorized to access this interface(authentication no equal)!").c_str(), "text/plain");
+		res.set_content("not authorized to access this interface(authentication no equal)!", "text/plain");
 		return false;
 	}
 	return true;

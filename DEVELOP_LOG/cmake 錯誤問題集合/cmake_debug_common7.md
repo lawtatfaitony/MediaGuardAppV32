@@ -1,6 +1,12 @@
 # CMAKE 編譯問題
 
-### 撤換交叉編譯模式注意問題:
+
+
+### 交叉編譯模式注意問題:
+
+​		交叉編譯就是跨平台指向目標編譯機器:
+
+![image-20250103185918396](README_IMGs/cmake_debug_common7/image-20250103185918396.png)
 
 ​		如果之前是 x64 (WIN32)模式情況下,撤換到LINUX會比較慢: 右下角一直提示 : 
 
@@ -11,6 +17,16 @@
 ![image-20250103174432334](README_IMGs/cmake_debug_common7/image-20250103174432334.png)
 
 ![image-20250103174739900](README_IMGs/cmake_debug_common7/image-20250103174739900.png)
+
+![image-20250103183307932](README_IMGs/cmake_debug_common7/image-20250103183307932.png)
+
+![image-20250103183607337](README_IMGs/cmake_debug_common7/image-20250103183607337.png)
+
+**cmakesettings.json 的 remoteMachineName 節點的來源,**
+
+ (有時因為從另一台機器複製過來就會導致這個問題,點選SSH跨平台連接重新選擇)
+
+![image-20250103182417396](README_IMGs/cmake_debug_common7/image-20250103182417396.png)
 
  Visual Studio 2022 中加載 CMake 項目時出現了問題，具體是找不到所需的模組目錄。以下是一些可能的解決方案：
 
@@ -109,3 +125,16 @@ cmake --version
 
 ### **總結**
 這個問題通常是由於多個版本的 CMake 衝突或環境變數配置錯誤引起的。建議卸載舊版 CMake，重新安裝最新版本，並確保系統環境變數中指向正確的路徑。如果問題仍未解決，可以嘗試完全清除 Visual Studio 的內置 CMake 配置並重新安裝。
+
+# 跨平台編譯
+
+
+
+```
+vs 2022執行的命令:
+[rsync] rsync -t --delete -v -r --exclude=.vs --exclude=.git --exclude=out --exclude=nodemodule --exclude=output/video --exclude=output/picture -8  "." rsync://tonylaw@localhost:64493/-home-tonylaw-.vs-MediaGuardApp_Dev-e234a32e-f6f3-437d-8ded-7c65a1b6f037-src
+```
+
+![image-20250103234715887](README_IMGs/cmake_debug_common7/image-20250103234715887.png)
+
+rs : remote server sync 遠程服務器同步

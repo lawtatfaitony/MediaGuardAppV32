@@ -396,25 +396,26 @@ void AudioStreamHandle::do_decode()
 	int64_t nLoop = 0;
 	int got_picture = -1;
 	int delayedFrame = 0;
-	AVPacket packet;
-	av_init_packet(&packet);
+	
+	AVPacket* packet = av_packet_alloc();
+
 	int64_t nLastSaveVideo = Time::GetMilliTimestamp();
 	int64_t nVideoTime = m_infoStream.nVideoTime * 1000;
 	while (!m_bExit)
 	{
-		int nCode = av_read_frame(m_pInputAVFormatCtx, &packet);
+		int nCode = av_read_frame(m_pInputAVFormatCtx,packet);
 		if (nCode < 0) {
 			cameraConnectingStatus = CameraConnectingStatus::InRequestStopped;
 			break;
 		}
 
-		if (packet.stream_index == m_infoStream.nAudioIndex)
+		if (packet->stream_index == m_infoStream.nAudioIndex)
 		{
-			if (decode_audio_packet(packet, nLoop))
+			if (decode_audio_packet(*packet, nLoop))
 			{
 				if (m_infoStream.bSaveVideo)
 				{
-					save_stream(m_pOutputFileAVFormatCtx, packet);
+					save_stream(m_pOutputFileAVFormatCtx, *packet);
 					auto nMillSecond = Time::GetMilliTimestamp();
 					if (nMillSecond - nLastSaveVideo >= nVideoTime)
 					{
@@ -424,10 +425,10 @@ void AudioStreamHandle::do_decode()
 					}
 				}
 				if (m_infoStream.bRtmp)
-					save_stream(m_pOutputStreamAVFormatCtx, packet);
+					save_stream(m_pOutputStreamAVFormatCtx, *packet);
 			}
 		}
-		av_packet_unref(&packet);
+		av_packet_unref(packet);
 	}
 }
 

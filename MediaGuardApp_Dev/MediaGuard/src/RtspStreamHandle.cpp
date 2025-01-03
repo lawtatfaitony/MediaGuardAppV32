@@ -19,6 +19,7 @@ int RtspStreamHandle::read_interrupt_cb(void* pContext)
 {
 	/*av_log(NULL, AV_LOG_INFO, "func::read_interrupt_cb  \n");
 	LOG(INFO) << "[RtspStreamHandel::read_interrupt_cb]";*/
+	  
 	return 0;
 }
 
@@ -34,7 +35,6 @@ enum AVPixelFormat RtspStreamHandle::get_hw_format(AVCodecContext* ctx, const en
 	fprintf(stderr, "Failed to get HW surface format.\n");
 	return AV_PIX_FMT_NONE;
 }
-
 
 int RtspStreamHandle::hw_decoder_init(AVCodecContext* ctx, const enum AVHWDeviceType type)
 {
@@ -254,7 +254,7 @@ bool RtspStreamHandle::open_input_stream()
 	av_dict_set(&pOption, "probesize", "524288", 0); // 降低 probesize 的大小為 512KB
 #endif 
 	 
-	av_dict_set(&pOption, "stimeout", "2000000", 0);	 //如果没有设置stimeout，那么把ipc网线拔掉，av_read_frame会阻塞（时间单位是微妙）		
+	av_dict_set(&pOption, "stimeout", "2000000", 0);	 //如果没有设置stimeout，那么把ipc网线拔掉，av_read_frame会阻塞（时间单位是微妙 2000000微秒=2秒）
 	av_dict_set(&pOption, "fflags", "nobuffer", 0);		 //无缓存，解码时有效 https://blog.csdn.net/asdasfdgdhh/article/details/125501488
 	
 	m_pInputAVFormatCtx->interrupt_callback = { read_interrupt_cb, this };
@@ -266,8 +266,7 @@ bool RtspStreamHandle::open_input_stream()
 		return false;
 	}
 	std::cout << "\nCameraId=" + std::to_string(m_infoStream.nCameraId) << " Open input[" << m_infoStream.strInput << "] success.\n";
-	 
-
+	
 	// retrieve stream information 获取音视频信息
 	if (avformat_find_stream_info(m_pInputAVFormatCtx, 0) < 0)
 	{
@@ -943,10 +942,10 @@ bool RtspStreamHandle::decode_audio_packet(const AVPacket& packet)
 			succ = false;
 		}
 #pragma region GET_AV_SAMPLE 音頻包採樣   
-		//这段是音频解码保存 去掉注释进行测试 2023-2-10
+		
 		/*
 		参考视音频同步 实现 代码:https://github.com/brookicv/FSplayer
-		ref 解析文章 https://blog.csdn.net/qq_40170041/article/details/128233616
+		ref 解析文章 https://blog.csdn.net/qq_40170041/article/details/128233616 
 		*/
 		//data_size = av_get_bytes_per_sample(m_pAudioDecoderCtx->sample_fmt);
 		//if (data_size < 0) {
@@ -954,9 +953,11 @@ bool RtspStreamHandle::decode_audio_packet(const AVPacket& packet)
 		//	fprintf(stderr, "Failed to calculate data size\n");
 		//	return false;
 		//}
+		// // 打開文件並寫入數據
+		//FILE* file = fopen(m_path_filename.c_str(), "wb"); // 以二進制模式打開文件 //應該是一個文件指針
 		//for (int i = 0; i < pFrame->nb_samples; i++) {
 		//	for (int nChl = 0; nChl < m_pAudioDecoderCtx->channels; nChl++) {
-		//		fwrite(pFrame->data[nChl] + data_size * i, 1, data_size, output_file); //outfile
+		//		fwrite(pFrame->data[nChl] + data_size * i, 1, data_size, file); //outfile //2025-1-3 output_file //m_path_filename
 		//	}
 		//}
 

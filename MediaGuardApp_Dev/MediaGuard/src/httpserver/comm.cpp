@@ -1,34 +1,18 @@
 ﻿#include "comm.h"
 
-//int64_t getFileSize(const char* fileName)
-//{
-//#ifdef _WIN32
-//	WIN32_FIND_DATA fileInfo;
-//	HANDLE hFind = FindFirstFile(fileName, &fileInfo);
-//	if (hFind != INVALID_HANDLE_VALUE)
-//	{
-//		//fileInfo.nFileSizeLow;
-//		FindClose(hFind);
-//		return MAKE64(fileInfo.nFileSizeHigh, fileInfo.nFileSizeLow);
-//	}
-//#else //-D_GNU_SOURCE 加编译选项 宏定义
-//	// struct stat64 st;
-//	// if (stat64(fileName, &st) == 0)
-//	// {
-//	// 	return st.st_size;
-//	// }
-//#endif
-//	return -1;
-//}
-
 size_t getFileCtx(const char* fileName, char* ctx, size_t ctxsize)
 {
 	//FILE* fp = fopen(fileName, "rb"); //提示不安全 改為:
 	
 	FILE* fp;
+
+#ifdef _WIN32
 	fopen_s(&fp, fileName, "r");
+#else
+	fp = fopen(fileName, "r");
+#endif
 	 
-	if (fp == NULL)
+	if(fp == NULL)
 		return 0;
 
 	size_t ret = fread(ctx, 1, ctxsize, fp);

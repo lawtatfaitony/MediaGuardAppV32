@@ -105,14 +105,15 @@ void NatHeartBean::get_server_internet_ip_port(char*& stun_server_ip, int& stun_
         std::cerr << "Failed to create socket." << std::endl;
         return;
     }
-
-    struct addrinfo hints, * res;
-    memset(&hints, 0, sizeof(hints));
+    struct addrinfo hints;
+    memset(&hints, 0, sizeof(hints)); 
     hints.ai_family = AF_INET; // IPv4
     hints.ai_socktype = SOCK_DGRAM; // UDP
 
+    struct addrinfo* res;
+    int status = getaddrinfo("example.com", nullptr, &hints, &res);
     // 解析主機名
-    if (getaddrinfo(STUN_SERVER, nullptr, &hints, &res) != 0) {
+    if (status != 0) {
         std::cerr << "Failed to resolve hostname." << std::endl;
         return;
     }
@@ -259,24 +260,18 @@ std::string NatHeartBean::get_public_ip_by_curl() {
 // 通過內存獲取 curl客戶端命令結果 必須安裝curl(windows 內置的,Linux需要安裝package)
 // curl 命令獲得公網IP OK  ★★★★★ 2024-12-29
 std::string NatHeartBean::get_public_ip_by_curl_memory() {
-
     // 使用 curl 命令獲取公共 IP
     const char* command = "curl -s http://ifconfig.me";
-     
+
     // 打開管道以執行命令
 #ifdef WIN32
-    int _pclose(FILE * stream);
     std::unique_ptr<FILE, decltype(&_pclose)> pipe(_popen(command, "r"), _pclose);
-#endif
-
-#ifdef _linux_
-    int pclose(FILE * stream);
+#else
     std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(command, "r"), pclose);
 #endif
-    
 
     if (!pipe) {
-        throw std::runtime_error("_popen() failed!");
+        throw std::runtime_error("popen() failed!");
     }
 
     char buffer[128];
@@ -286,7 +281,7 @@ std::string NatHeartBean::get_public_ip_by_curl_memory() {
     while (fgets(buffer, sizeof(buffer), pipe.get()) != nullptr) {
         result += buffer;
     }
-    
-    return result; 
+
+    return result;
 }
 
